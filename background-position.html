@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main
+        {
+            width: 90%;
+            margin: 20% auto;
+            display: flex;          
+            /* height: 60vh; */
+            background: #333;
+            /* padding: 20px; */
+        }
+        .main .left{
+            width: 50%;
+            /* height: inherit; */
+            color: white;
+            padding: 20px;
+        }
+        .main .right{
+            position: relative;
+            /* height: inherit; */
+            width: 50%;
+            background: url(https://images.hdqwalls.com/wallpapers/mclaren-gts-8k-front-kp.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .right .box{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background: orangered;
+            border-radius: 100%;
+        }
+        .bx1{
+            margin-left: -25px;
+            top: 2%;
+        }
+        .bx2{
+            margin-left: -25px;
+
+            top: 40%;
+        }
+        .bx3{
+            margin-left: -25px;
+            top: 76%;
+        }
+
+        @media screen and (max-width:960px) {
+            .main{
+                flex-direction: column;
+                /* height: 50vh; */
+            }
+            .main .left{
+                width: 100%;
+            }
+            .main .right{
+                width: 100%;
+                height: 50vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas id at architecto porro cupiditate suscipit aspernatur! Nam dignissimos quas amet animi quisquam reprehenderit odit magni a nostrum est, non, nemo assumenda et atque quia. Corporis laudantium cupiditate quidem praesentium dicta et ullam, cum maiores error debitis illo consequatur dolor exercitationem repellat incidunt. Alias laudantium laborum quae consequatur, tempore fugiat commodi itaque doloribus labore et animi, maiores autem est quod sunt quas. Autem, repudiandae quam enim eum, ratione totam, dignissimos nostrum possimus eos sapiente ipsum labore!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor fuga voluptatibus dolore atque numquam exercitationem pariatur recusandae! Numquam, corporis modi. Inventore voluptatibus fuga quas incidunt eveniet tenetur distinctio aspernatur quibusdam. Dicta rem, aperiam eveniet illum, nostrum possimus sequi recusandae culpa quos deleniti ipsa ratione laboriosam vitae necessitatibus voluptate a sed. Ab doloribus illum porro consequatur dolores aliquam, placeat assumenda eligendi quos pariatur accusantium officiis nulla.
+        </div>
+        <div class="right">
+            <div class="box bx1"></div>
+            <div class="box bx2"></div>
+            <div class="box bx3"></div>
+        </div>
+    </div>
+</body>
+</html>
