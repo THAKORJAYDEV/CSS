@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Assignment Template Website </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+        .container{
+           width: 100%;
+           background-image: url(Ellipse\ 1.png);
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 30px;
+           
+        }
+        header .bar{
+            display: none;
+            font-size: 15px;
+        }
+        header .logo{
+            font-size: 20px;
+        }
+        header .menu a{
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+            font-weight: 300;
+        }
+        header .menu a span{
+            font-size: 12px;
+        }
+        header .loginbtn a{
+            text-decoration: none;
+            color: black;
+            padding: 20px
+        }
+        header .loginbtn a:hover{
+            color: blue;
+            background-color: lightblue;
+        }
+         .info{
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+        }
+         .info span{
+            background-color: #e2ede3;
+            border-radius: 20px;
+            padding: 6px 6px 6px 0px;
+            
+        }
+         .info span span{
+            background-color: lawngreen;
+            border-radius: 20px;
+            color: white;
+            padding: 6px;
+            margin-right: 7px;
+           
+        }
+         .info h1{
+            margin: 30px 0;
+        }
+         .info p{
+            margin-bottom: 20px;;
+        }
+         .info input{
+            width: 20%; 
+            padding: 8px;
+        }
+         .info button{
+            background-color: rgb(81, 104, 207);
+            padding: 8px;
+            color: white;
+            border: 1px solid rgb(81, 104, 207);
+
+        }
+        .banner{
+            width: 100%;
+            text-align: center;
+            padding: 70px;
+        }
+        .banner img{
+            width: 100%;
+            height: inherit;
+            
+        }
+        .social-networks{
+            width: 100%;
+            text-align: center;
+        }
+        .social-networks .sn{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .social-networks .sn .sn-img{
+           width: 10%;
+        }
+        .social-networks .sn .sn-img img{
+            margin: 25px 0px;
+            width: 100%;
+            height: inherit;
+        }
+        .social-networks p{
+            font-size: 15px;
+        }
+        .social-networks img{
+           /* font-size: 7px; */
+          /* padding: 45px; */
+        }
+
+        .timeline{
+            width: 100%;
+            background-color: rgb(250, 246, 246);
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+        }
+        .timeline .timeline-left{
+            width: 50%;
+            padding: 30px;
+            align-self: center;
+        }
+        .timeline .timeline-left img{
+            width: 100%;
+            height: inherit;
+        }
+        .timeline .timeline-right{
+            width: 50%;
+            align-self: center;
+           padding: 80px;
+        }
+        .timeline .timeline-right .work{
+            width: 80%;
+            margin-bottom: 20px;
+            transition: all 2s linear;
+        }
+        .timeline .timeline-right .work:hover{
+            border-left: 5px solid blueviolet;
+            padding: 15px;
+        }
+
+        .easy-work{
+            width: 100%;
+            padding: 40px;
+        }
+        .easy-work h1{
+            text-align: center;
+            margin-bottom: 20px;;
+        }
+        .easy-work .easier{
+         width: 100%;
+         /* margin: 0 auto; */
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+        }
+        .easy-work .easier .benefits{
+            width: 30%;
+         margin-bottom: 20px;
+         padding: 30px;
+
+        }
+        .easy-work .easier span{
+            color: blue;
+            background-color: rgb(193, 207, 226);
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .easy-work .easier .benefits img{
+            margin-bottom: 15px;
+        }
+        .easy-work .easier .benefits h4{
+            margin-bottom: 5px;
+        }
+        .easy-work .easier .benefits p{
+            line-height: 20px;
+            /* font-weight: 100; */
+        }
+
+        .timeline .left p{
+          margin: 20px 0;
+        }
+        .timeline .left button{
+            background-color: rgb(81, 104, 207);
+            padding: 8px;
+            color: white;
+            border: 1px solid rgb(81, 104, 207);
+        }
+
+        .customer{
+            width: 100%;
+            text-align: center;
+            padding: 50px;
+        }
+        .customer p{
+            margin: 30px 0;
+        }
+        .customer .cust{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .customer .cust .c{
+            width: 25%;
+            display: flex;
+            /* justify-content: space-between; */
+            /* margin: 0 auto; */
+            transition: all 1s linear;
+        }
+        .customer .cust .c:hover{
+            border-top: 3px solid black;
+            padding: 15px;
+           
+
+        }
+        .customer .cust .c .cust-profile{
+           width: 20%;
+           margin-right: 15px;
+        }
+        .customer .cust .c .cust-profile img{
+            width:100%;
+            height: inherit;
+        }
+        .customer .cust .c .cust-name{
+            width: 70%;
+            align-self: center;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+        }
+        .customer .cust .c .cust-name h5{
+              margin-bottom: 5px;
+             
+        }
+        .customer .cust .c .cust-name h6{
+             font-weight: 100;
+        }
+
+        .apps{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(81, 104, 207);
+            border-radius: 10px;
+            padding: 50px;
+            margin-bottom: 50px;
+        }
+        .apps .app-left{
+            width: 50%;
+            color: white;
+         
+        }
+        .apps .app-left h2{
+            font-size: 20px;
+        
+        }
+        .apps .app-right{
+            width: 50%;
+            display: flex;
+             /* justify-content: space-between; */
+
+        }
+
+        .apps .app-right .appimg{
+            width: 30%;
+            margin: 10px;   
+        }
+        .apps .app-right .appimg img{
+            width: 100%;
+            height: inherit;
+        }
+        /* .apps .app-right .appstore{
+            width: 30%;
+        }
+        .apps .app-right .appstore img{
+            width: 100%;
+            height: inherit;
+        } */
+        footer{
+            width: 100%;
+            background-color: black;
+            /* display: flex;
+            justify-content: space-evenly; */
+        }
+        /* footer .container1{
+            width: 90%;
+            margin: 0 auto;
+        } */
+        footer .container1 .footer-up{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        footer .container1 .footer-up .menus{
+            /* width: 20%; */
+            display: flex;
+            /* flex-direction: column; */
+            color: white;
+            padding: 30px;
+            
+        }
+        /* footer .menus h6 */
+        footer .container1 .footer-up .menus a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-size: 10px;
+            margin-top: 10px;
+        }
+        footer .container1 .footer-up .menus img{
+            margin-top: 10px; 
+        }
+        footer .container1 .footer-up .menus .ft-dropdown{
+            display: none;
+        }
+        footer .container1 .footer-up .footer-app .appimg{
+            width: 50%;
+        }
+        footer .container1 .footer-up .footer-app .appimg img{
+            width: 100%;
+            height: inherit;
+        }
+        /* footer .footer-botton{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+             border-top: 1px solid white;
+             padding: 20px;
+             background-color: aqua;
+        }
+        footer .footer-botton .copyright{
+            width: 50%;
+            color: white;
+            background-color: cyan;
+        } */
+       
+        footer .container1 .footer-bottom {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 70px;
+            border-top: 1px solid white;
+        }
+        footer .container1 .footer-bottom .copyright{
+            width: 50%;
+        }
+        footer .container1 .footer-bottom .icons{
+           width: 50%;
+           text-align: right;
+        }
+        /* footer .container1 .footer-bottom .icons .btn{
+            width: 15px;
+            height: 15px;
+            border: 1px solid lightgray;
+            background-color: lightgrey;
+            border-radius: 100%;
+
+        } */
+        footer .container1 .footer-bottom .icons .icn{
+            margin: 15px;
+        }
+        
+
+        @media  screen and (max-width: 960px) {
+            .container{
+                background-image: url();
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+            }
+            header .menu{
+               display: none;
+            }
+            header .loginbtn{
+               display: none;
+            }
+            header .logo{
+                text-align: left;
+            }
+            header .bar{
+            display: block;
+            text-align: right;
+            }
+            .info .he{
+                display: none;
+            }
+            .info span{
+                padding: 5px 15px;
+            }
+            .info form input{
+                width: 100%;
+                display: block;
+                margin-bottom: 10px;
+            }
+            .info form button{
+                width: 100%;
+                display: block;
+            }
+           
+            .info{
+                width: 100%;
+                flex-direction: column;
+                display: block;
+            }
+            .info h1{
+                font-size: 25px;
+            }
+            .info p{
+                text-align: center;
+                font-size: 14px;
+            }
+            .info span span{
+                overflow: hidden;
+            }
+          .banner{
+            width: 100%;
+          }
+          .banner img{
+            width: 100%;
+            height: inherit;
+          }
+          .social-networks{
+            width: 100%;
+          }
+          .social-networks .sn{
+            width: 100%;
+          }
+          .social-networks .sn .hideimg{
+            display: none;
+          }
+          /* .social-networks .sn .sn-img{
+            width: 30%;
+            height: 50px;
+          }
+          .social-networks .sn .sn-img img{
+            width: 100%;
+            height: inherit;
+          } */
+          .timeline{
+            width: 100%;
+            flex-direction: column;
+          }
+          .timeline .timeline-left{
+            width: 100%;
+          }
+          .timeline .timeline-left img{
+            width: 100%;
+            height: inherit;
+          }
+          .timeline .timeline-right{
+            width: 100%;
+          }
+          .timeline .timeline-right .work{
+            width: 100%;
+            transition: all 1s linear;
+          }
+          .timeline .left button{
+            width: 100%;
+            display: block;
+          }
+          .timeline .timeline-right .work:hover{
+            border-bottom: 5px solid blueviolet;
+            border-left: 0px;
+            padding: 15px;
+        }
+        .easy-work{
+            width: 100%;
+            flex-direction: column;
+        }
+        .easy-work .easier{
+            width: 100%;
+            flex-direction: column;
+
+        }
+        .easy-work .easier span{
+            display: block;
+            width: 100%;
+        }
+        .easy-work .easier .b4{
+            display: none;
+        }
+        .easy-work .easier .b5{
+            display: none;
+        }
+        .easy-work .easier .b6{
+            display: none;
+        }
+        .easy-work .easier .benefits{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .everyday-work{
+            width: 100%;
+            flex-direction: column-reverse;
+        }
+        .everyday-work .left{
+            text-align: center;
+            width: 100%;
+            font-size: 10px;
+        }
+        .everyday-work .left h1{
+            font-size: 20px;
+        }
+        .everyday-work .left p{
+            font-size: 10px;
+        }
+        .everyday-work .left buttton{
+            width: 100%;
+        }
+        .customer{
+            width: 100%;
+            flex-direction: column;
+        }
+        .customer h1{
+            font-size: 17px;
+        }
+        .customer p{
+            font-size: 15px;
+        }
+        .customer .cust{
+            width: 100%;
+            flex-direction: column;
+        }
+        .customer .cust .c-hide{
+            display: none;
+        }
+        .customer .cust .c{
+            width: 100%;
+            flex-direction: column;
+           
+        }
+        .customer .cust .c:hover{
+            border-top: 0px;
+            padding: 0;
+        }
+        .customer .cust .c .cust-profile {
+            /* justify-content: center; */
+            text-align: center;
+            margin: 0 auto;
+
+        }
+        .customer .cust .c .cust-name{
+           text-align: center;
+        }
+        .apps{
+            width: 100%;
+            flex-direction: column;
+            align-content: center;
+            border-radius: 0;
+        }
+        .apps .app-left{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+           
+        }
+        .apps .app-left h2{
+            font-size: 15px;
+        }
+        .apps .app-right{
+            width: 100%;
+          
+            flex-direction: column;
+             
+            
+        }
+        .apps .app-right .appimg{
+            width: 60%;
+            margin-bottom: 20px;
+            margin: 0 auto;
+        }
+        footer{
+            padding: 30px;
+        }
+        footer .container1 .footer-up{
+            width: 100%;
+            flex-direction: column;
+        }
+        footer .container1 .footer-up .menus .a-hide{
+            display: none;
+        }
+       
+        footer .container1 .footer-up .menus h6{
+            display: inline;
+            /* margin-bottom: 0%; */
+            font-size: 20px;
+        }
+        footer .container1 .footer-up .menus .ft-dropdown{
+            display: inline;
+            text-align: right;
+        }
+        footer .container1 .footer-up .footer-app{
+             width: 100%;
+        }
+        footer .container1 .footer-up .menus {
+            color: white;
+            display: flex;
+            padding: 30px 0px;
+            justify-content: space-between;
+        }
+        footer .container1 .footer-bottom {
+            padding: 25px;
+        }
+        footer .container1 .footer-bottom .copyright{
+            width: 100%;
+            text-align: left;
+        }
+        footer .container1 .footer-bottom .icons{
+            display: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="logo">
+            <h4> team.flow </h4>
+        </div>
+        <div class="menu">
+            <a href=""> How it works <span> &#8744; </span> </a>
+            <a href=""> Product <span> &#8744; </span> </a>
+            <a href=""> Pricing  </a>
+            <a href=""> Resources <span> &#8744; </span> </a>
+
+        </div>
+        <div class="loginbtn">
+            <a href=""> Log in </a>
+            <a href=""> Get Started Free </a>
+        </div>
+        <div class="bar"> ☰ <br> Menu </div>
+    </header>
+
+    
+        <div class="info">
+             <span> <span class="he">Save 90% </span> Get account of &#36; 59 </span>
+            <h1> Manage the team <br> everyone wants to be on </h1>
+            <p> Simple platform that lets you master what great managers do best, <br> as develop trust, collaborate, and drive team performance.</p>
+            <form action="">
+            <input type="email" placeholder="name@yourcompany.com">
+            <button> Try it free </button>  
+        </form>
+        </div>
+
+    </div>
+    
+    <main>
+    <div class="banner">
+        <img src="Graph 2 1.png" alt="">
+    </div>
+
+    <div class="social-networks">
+        <p> TRUSTED BY OVER <strong> 10000+ </strong> WORLD'S BEST TEAMS </p>
+        <div class="sn">
+            <div class="sn-img">
+               <img src="google-2015a 1.png" alt="">
+           </div>
+           <div class="sn-img">
+               <img src="airbnb 1.png" alt="">
+           </div>
+          <div class="sn-img">
+               <img src="Group.png" alt="">
+           </div>
+           <div class="sn-img">
+             <img src="hubspot 1.png" alt="">
+           </div>
+           <div class="sn-img hideimg">
+             <img src="slack-2 1.png" alt="">
+           </div>
+
+        </div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-left">
+         <img src="Group 25.png" alt="">
+      </div>
+      <div class="timeline-right">
+       <div class="work">
+        <h4> Survey your team </h4>
+        <p> Powerful questions that get to the heart of how team members really feel. </p>
+       </div>
+       <div class="work">
+        <h4> Resolve issue quickly </h4>
+        <p> Anonymous massaging that connects managers and employees.</p>
+       </div>
+       <div class="work">
+        <h4> Plan your 1-on-1s </h4>
+        <p> Plan meetings together and give a stake employees and teams. </p>
+       </div>
+       <div class="work">
+        <h4> Track your progress </h4>
+        <p> Easy-to-read reports and sharable results help manegers and teams.</p>
+       </div>
+      </div>
+    </div>
+
+ <div class="easy-work">
+    <h1> Make your work easier </h1>
+    <div class="easier">
+
+    <div class="benefits b1">
+        <img src="Group 21.png" alt="">
+        <h4> Team Surveys & Reports </h4>
+        <p> Short annonymous surveys track your team's needs weekly so you can focus. </p>
+    </div>
+
+    <div class="benefits b2">
+        <img src="Group 19.png" alt="">
+        <h4> Collaborative 1:1 </h4>
+        <p> Build relationships by planning 1-on-1s and start meetings.  </p>
+    </div>
+
+    <div class="benefits b3">
+        <img src="Group 20.png" alt="">
+        <h4> Learning center </h4>
+        <p> Quickly get solutions tailored to your personal challenges from the manager.</p>
+    </div>
+
+    <div class="benefits b4">
+        <img src="Group 22.png" alt="">
+        <h4> Annonymous messaging  </h4>
+        <p> Develop trust in asafe channel for important conversations.  </p>
+    </div>
+
+    <div class="benefits b5">
+        <img src="Group 23.png" alt="">
+        <h4> Conversation Engine </h4>
+        <p> Communocate confidently with recommended talking points. </p>
+    </div>
+
+    <div class="benefits b6">
+        <img src="Group 24.png" alt="">
+        <h4> Exclusives managers </h4>
+        <p> Access manager tips, activities and best practices from our team of experts. </p>
+    </div>
+    <span> View More benefits </span>
+</div>
+ </div>
+
+
+ <div class="timeline everyday-work">
+    <div class="timeline-right left">
+        <h1> We work how you work everyday </h1>
+        <p> Since the easiest things to use actually get used, we adapts to the way your team works – not the other way around.</p>
+
+        <button>
+            Get Started Free
+        </button>
+    </div>
+    <div class="timeline-left">
+        <img src="Group 26.png" alt="">
+    </div>
+ </div>
+
+ <div class="customer">
+    <h1> Why customer love <br> working with us </h1>
+    <p> “It's amazing what has helped me learn about my team. <br>
+        I don't worry about blindspots anymore, and 1-on-1s have never <br>
+        been more productive. The team loves it.” </p>
+        <div class="cust">
+
+        <div class="c">
+            <div class="cust-profile">
+                <img src="Ellipse 5.png" alt="">
+            </div>
+            <div class="cust-name">
+                <h5> Jorge Robertson </h5>
+                <h6> CS at Google </h6>
+            </div>
+        </div>
+
+        <div class="c c-hide">
+            <div class="cust-profile">
+                <img src="Ellipse 6.png" alt="">
+            </div>
+            <div class="cust-name">
+                <h5> Francisco Bell </h5>
+                <h6> Designer at Microsoft </h6>
+            </div>
+        </div>
+
+        <div class="c c-hide">
+            <div class="cust-profile">
+                <img src="Ellipse 7.png" alt="">
+            </div>
+            <div class="cust-name">
+                <h5> Beth Fox </h5>
+                <h6> Developer at Airbnb </h6>
+            </div>
+        </div>
+        </div>
+    
+ </div>
+
+ <div class="apps">
+    <div class="app-left">
+        <h2> 84% of employees who use <br> trust their direct managers </h2>
+    </div>
+    <div class="app-right">
+        <div class="appimg">
+        <img src="google-play-badge 1.png" alt="">
+    </div>
+    <div class="appimg">
+        <img src="Group (1).png" alt="">
+    </div>
+    </div>
+ </div>
+</main>
+
+<footer>
+    <div class="container1">
+    <div class="footer-up">
+    <div class="menus">
+        
+        <h6> Company </h6>  <span class="ft-dropdown"> &#8744; </span>
+    
+        <a href="" class="a-hide"> About Us </a>
+        <a href=""  class="a-hide"> Blog </a>
+        <a href=""  class="a-hide"> Careers </a>
+        <a href=""  class="a-hide"> Contact Us </a>
+    </div>
+    <div class="menus">
+        <h6> Support  </h6>  <span class="ft-dropdown"> &#8744; </span>
+        <a href=""  class="a-hide"> Help Center </a>
+        <a href=""  class="a-hide"> Safety Center </a>
+        <a href=""  class="a-hide"> Community</a>
+    </div>
+
+    <div class="menus">
+        <h6> Legal  </h6> <span class="ft-dropdown"> &#8744; </span>
+        <a href=""  class="a-hide"> Cookies Policy  </a>
+        <a href=""  class="a-hide"> Privacy Policy </a>
+        <a href=""  class="a-hide"> Terms of service </a>
+    </div>
+
+    <div class="menus footer-app">
+        <h6> Install apps </h6>
+    <div class="appimg">
+        <img src="Layer 2.png" alt="">
+    </div>
+    <div class="appimg">
+        <img src="Group (2).png" alt="">
+    </div>
+    </div>
+</div>
+
+<div class="footer-bottom">
+    <div class="copyright">
+        <p> &#169; 2020 - All rights reserved </p>
+    </div>
+    <div class="icons">
+        
+        <i class="fa-brands fa-instagram icn"></i>
+        <i class="fa fa-earth-americas icn"></i>
+         <i class="fa-brands fa-twitter icn"></i>
+        <i class="fa-brands fa-youtube icn"></i>
+
+    </div>
+</div>
+
+</div>
+</footer>
+</body>
+</html>
